@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="univosv.univoappbeta.notas_estudiante">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_notas_estudiante" />
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab"
+        android:layout_margin="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        app:fab_labelStyle="@drawable/fab_label">
+
+
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/inicio"
+            app:fabSize="mini"
+            app:fab_title="@string/menu"
+            app:fab_icon="@drawable/menu"
+            android:onClick="menu"
+
+            />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/perfil"
+            app:fabSize="mini"
+            app:fab_title="@string/perfil"
+            app:fab_icon="@drawable/perfil"
+            android:onClick="perfil"
+
+            />
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cerrar"
+            app:fabSize="mini"
+            app:fab_title="@string/cerrar"
+            app:fab_icon="@drawable/cerrar"
+            app:fab_size="mini"
+            android:onClick="cerrar"
+            />
+
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+</android.widget.RelativeLayout>
+
+
+
+
+
+

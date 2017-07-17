@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="univosv.univoappbeta.noticias">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_noticias" />
+
+<com.getbase.floatingactionbutton.FloatingActionsMenu
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/menu"
+    app:fab_addButtonColorNormal="@color/azul"
+    app:fab_addButtonColorPressed="@color/blanco"
+    android:layout_margin="16dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    app:fab_labelStyle="@drawable/fab_label" >
+
+
+
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/perfil"
+        app:fab_title="@string/perfil"
+        app:fab_colorNormal="@color/amarillo"
+
+        app:fab_icon="@drawable/perfil"
+        app:fab_size="mini"
+        android:onClick="perfil"
+
+        />
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notas"
+        app:fab_title="@string/notas"
+        app:fab_colorNormal="@color/rosa"
+        app:fab_icon="@drawable/ic_event"
+        android:onClick="notas"
+        app:fab_labelsPosition="left"
+        app:fab_size="mini"
+        />
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cerrar"
+        app:fabSize="mini"
+        app:fab_colorNormal="@color/verde"
+        app:fab_title="@string/cerrar"
+        app:fab_icon="@drawable/cerrar"
+        app:fab_size="mini"
+        android:onClick="cerrar"
+
+
+        />
+
+
+</com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+</android.widget.RelativeLayout>

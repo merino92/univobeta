@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">UNIVOapp.beta</string>
+    <string name="title_activity_noticias">noticias</string>
+    <string name="title_activity_principal">principal</string>
+    <string name="menu">menu</string>
+    <string name="perfil">perfil</string>
+    <string name="notas">notas</string>
+    <string name="cerrar">cerrar cesion</string>
+    <string name="title_activity_perfil_alumno">perfilAlumno</string>
+    <string name="title_activity_perfil_estudiante">perfil_estudiante</string>
+    <string name="title_activity_notas_estudiante">notas_estudiante</string>
+    <string name="title_activity_notas_estudiante2">notas_estudiante2</string>
+</resources>
